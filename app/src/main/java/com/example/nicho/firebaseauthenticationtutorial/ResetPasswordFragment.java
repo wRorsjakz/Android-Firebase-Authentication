@@ -1,13 +1,12 @@
 package com.example.nicho.firebaseauthenticationtutorial;
 
-import android.accounts.AuthenticatorException;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,10 +17,6 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthEmailException;
-import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
-import com.google.firebase.auth.FirebaseAuthInvalidUserException;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 
 import es.dmoral.toasty.Toasty;
 
@@ -71,7 +66,7 @@ public class ResetPasswordFragment extends Fragment implements View.OnClickListe
                 final String email = textInputEditText.getText().toString().trim();
                 boolean validEmail = ClientSideValidation.ValidateEmailAddress(email, textInputLayout, textInputEditText);
 
-                if(validEmail == true)
+                if(validEmail)
                     {
                         firebaseAuth.sendPasswordResetEmail(email)
                                 .addOnSuccessListener(new OnSuccessListener<Void>()
