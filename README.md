@@ -2,12 +2,10 @@
 
 _A fully functional Android authentication application, built with Firebase_
 
-<img src="https://img.shields.io/badge/minSdkVersion-21-red.svg?style=true" alt="minSdkVersion 21" data-canonical-src="https://img.shields.io/badge/minSdkVersion-24-red.svg?style=true" style="max-width:100%;">
-<img src=https://img.shields.io/badge/compileSdkVersion-28-brightgreen.svg alt="compileSdkVersion 28" data-canonical-src="https://img.shields.io/badge/compileSdkVersion-27-yellow.svg?style=true" style="max-width:100%;">
+<img src="https://img.shields.io/badge/minSdkVersion-21-red.svg?style=true" alt="minSdkVersion 21" data-canonical-src="https://img.shields.io/badge/minSdkVersion-24-red.svg?style=true" style="max-width:100%;"> <img src=https://img.shields.io/badge/compileSdkVersion-28-brightgreen.svg alt="compileSdkVersion 28" data-canonical-src="https://img.shields.io/badge/compileSdkVersion-27-yellow.svg?style=true" style="max-width:100%;">
 
 <br>
 <br>
-
 
 <img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-built_black.png" width="50%">
 
@@ -39,7 +37,8 @@ _A fully functional Android authentication application, built with Firebase_
 
 * Log Out
 
-##Credits
+## Credits
+
  * Firebase assets download [here](https://firebase.google.com/brand-guidelines/)
  * [GrenderG/Toasty](https://github.com/GrenderG/Toasty) - The usual Toast, but with steroidss
 
