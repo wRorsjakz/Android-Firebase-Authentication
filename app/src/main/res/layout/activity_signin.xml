@@ -18,7 +18,7 @@
         android:layout_marginTop="45dp"
         android:src="@drawable/firebase_logo" />
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_email_textinputlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -26,16 +26,16 @@
         android:hint="@string/email_username"
         android:layout_marginTop="30dp">
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_email_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
             android:textColor="@color/white"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/login_password_textinputlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -44,14 +44,14 @@
         android:layout_marginTop="16dp"
         app:passwordToggleEnabled="true">
 
-        <android.support.design.widget.TextInputEditText
+        <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/login_password_edittext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:textColor="@color/white"/>
 
-    </android.support.design.widget.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <ProgressBar
         android:id="@+id/login_progressbar"

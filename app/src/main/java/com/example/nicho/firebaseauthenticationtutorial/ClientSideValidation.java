@@ -1,7 +1,7 @@
 package com.example.nicho.firebaseauthenticationtutorial;
 
-import android.support.design.widget.TextInputEditText;
-import android.support.design.widget.TextInputLayout;
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import android.util.Patterns;
 
 import java.util.regex.Pattern;
@@ -26,7 +26,7 @@ public class ClientSideValidation
                         passwordLayout.setError("Please enter a password");
                         passwordEditText.requestFocus();
                         return false;
-                    } else if ((PASSWORD_PATTERN.matcher(_password).matches() == false))
+                    } else if ((!PASSWORD_PATTERN.matcher(_password).matches()))
                     {
                         passwordLayout.setErrorEnabled(true);
                         passwordLayout.setError("Password too weak");
@@ -48,7 +48,7 @@ public class ClientSideValidation
                     emailEditText.requestFocus();
                     return false;
                 }
-            else if ((Patterns.EMAIL_ADDRESS.matcher(_EmailAddress).matches() == false))
+            else if ((!Patterns.EMAIL_ADDRESS.matcher(_EmailAddress).matches()))
                 {
                     emailLayout.setErrorEnabled(true);
                     emailLayout.setError("Please enter a valid email address");

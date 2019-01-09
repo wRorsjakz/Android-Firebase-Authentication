@@ -1,10 +1,12 @@
 package com.example.nicho.firebaseauthenticationtutorial;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.widget.RelativeLayout;
+
+import androidx.fragment.app.FragmentTransaction;
 
 
 public class RegisterAndResetActivity extends AppCompatActivity
@@ -27,7 +29,7 @@ public class RegisterAndResetActivity extends AppCompatActivity
             {
                 Intent incomingIntent = getIntent();
 
-                android.support.v4.app.FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+                FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
                 if(incomingIntent.hasExtra("REGISTRATION_FRAGMENT"))
                     {
